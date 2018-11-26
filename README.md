@@ -11,7 +11,7 @@ Nell'architettura CogNet, mostrata in Figura 1, le risorse hardware sono gestite
 I dati raccolti verrebbero poi elaborati da CogNet Smart Engine (CSE) in tempo (quasi) reale o periodicamente, fondamentale per la gestione della rete 5G poiché mira a fornire una risposta immediata ad ogni cambiamento.
 Il Policy Manager è invece quello strato che, grazie alle informazioni in uscita dal CSE, genera le politiche di controllo successivamente distribuite alle risorse hardware e ai relativi componenti di gestione richiamando le API correlate. 
 
-![](image.png)
+![](CogNet_architecture.png)
 
 L'architettura di alto livello di CogNet include l'architettura NFV la quale sdeve inoltrare costantemente i record di stato e di utilizzo al CSE.
 Il CSE analizza quindi i dati raccolti per vari scopi come la scelta di allocazione dinamica delle risorse in base alle previsioni della richiesta di ognuna di esse e il rilevamento di minacce alla sicurezza o di degrado delle prestazioni.
