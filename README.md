@@ -3,15 +3,15 @@
 ### Introduzione 
 Dato che con la quinta generazioni di reti mobili (5G) ci si aspetta che vengano supportate sia comunicazioni tra umani che tra macchine e connessioni di un gran numero di dispositivi tramite un ampio flusso di informazioni, nasce la necessità di riuscire a gestire la rete tramite una buona  organizzazione, configurazione, sicurezza e ottimizazione della stessa.
 
-CogNet è un progetto che ha lo scopo di fornire un livello più elevato e più intelligente di gestione della rete per poter garantire la "Quality Of Service" (QoS), migliorare l'efficienza e ridurre le spese operative delle reti 5G. L'idea è quindi quella di raggiungere una gestione automatizzata delle infrastrutture di rete delle tecolecomunicazioni tramite la tecnologia del Machine Learning.
+CogNet è un progetto che ha lo scopo di fornire un livello più elevato e più intelligente di gestione della rete per poter garantire la [Quality Of Service](https://it.wikipedia.org/wiki/Qualit%C3%A0_del_servizio) (QoS), migliorare l'efficienza e ridurre le spese operative delle reti 5G. L'idea è quindi quella di raggiungere una gestione automatizzata delle infrastrutture di rete delle tecolecomunicazioni tramite la tecnologia del Machine Learning.
 
 ### Architettura
-CogNet propone di estendere la già esistente architettura NFV (Network Functions virtualization) che sfrutta le tecnologie IT per virtualizzare intere classi di funzioni dei nodi di rete come blocchi elementari e che possono essere interconnessi per implementare servizi di comunicazione.
+CogNet propone di estendere la già esistente architettura [NFV](https://en.wikipedia.org/wiki/Network_function_virtualization) (Network Functions virtualization) che sfrutta le tecnologie IT per virtualizzare intere classi di funzioni dei nodi di rete come blocchi elementari e che possono essere interconnessi per implementare servizi di comunicazione.
 Nell'architettura CogNet, mostrata in Figura 1, le risorse hardware sono gestite in un'architettura a strati, in particolare le informazioni di stato e di consumo delle risorse hardware sono raccolti in tempo reale da più blocchi funzionali che costituiscono l'architettura a più livelli.
 I dati raccolti verrebbero poi elaborati da CogNet Smart Engine (CSE) in tempo (quasi) reale o periodicamente, fondamentale per la gestione della rete 5G poiché mira a fornire una risposta immediata ad ogni cambiamento.
 Il Policy Manager è invece quello strato che, grazie alle informazioni in uscita dal CSE, genera le politiche di controllo successivamente distribuite alle risorse hardware e ai relativi componenti di gestione richiamando le API correlate. 
 
-![](CogNet_architecture.png)
+![Architettura](CogNet_architecture.png "Figura 1: Architettura CogNet")
 
 L'architettura di alto livello di CogNet include l'architettura NFV la quale sdeve inoltrare costantemente i record di stato e di utilizzo al CSE.
 Il CSE analizza quindi i dati raccolti per vari scopi come la scelta di allocazione dinamica delle risorse in base alle previsioni della richiesta di ognuna di esse e il rilevamento di minacce alla sicurezza o di degrado delle prestazioni.
